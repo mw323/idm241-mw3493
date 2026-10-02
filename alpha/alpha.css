@@ -23,7 +23,7 @@ body{
 
 .subtitle{
     font-size: 18px;
-    margin: 35px 0 12px;
+    margin: 45px 0 12px;
     color: #5f6368;
 }
 
@@ -31,6 +31,7 @@ body{
     font-size: 34px;
     margin: 0 0 24px;
     font-weight: 400;
+    padding: 0 20px;
 }
 
 .google-translate-link{
@@ -124,6 +125,7 @@ li{
     justify-items: center;
     max-width: 1200px;
     margin: 50px auto;
+    padding: 0 30px;
 }
 
 .video-item {
@@ -144,4 +146,53 @@ li{
 .video-item:nth-child(3) {
     grid-column: span 2;
     width: 50%;
+}
+
+@media (max-width: 1200px){
+    .video-container{
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 1024px){
+     .description-container{
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+
+    .description-container > div{
+        min-height: auto;
+    }
+    .video-container{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px){
+    .instructions{
+        max-width: 90%;
+    }
+
+    .video-container{
+        max-width: 600px;
+        grid-template-columns: 1fr;
+    }
+
+     .video-item:nth-child(3){
+        grid-column: span 1;
+        width: 100%;
+    }
+}
+
+@media (max-width: 568px){
+    .project-header h1{
+        font-size: 28px;
+    }
+
+    .description-container{
+        padding: 0 15px;
+    }
+    .video-container{
+        max-width: 500px;
+    }
 }
