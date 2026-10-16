@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Build</title>
+    <link rel="stylesheet" href="alpha/build/alphabuild.css">
+</head>
+<body>
+    <h1 class="title">Alpha Build: Copy Button</h1>
+    <div class="translation-area">
+        <div class="translation-text">
+            This is the translated text.
+        </div>
+        <div class="copy-container">
+            <button class="copy-btn" aria-label="Copy">
+                <svg class="copy-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 23H4C2.9 23 2 22.1 2 21V7H4V21H16V23ZM19 19H8C6.9 19 6 18.1 6 17V3C6 1.9 6.9 1 8 1H19C20.1 1 21 1.9 21 3V17C21 18.1 20.1 19 19 19ZM19 3H8V17H19V3Z"
+                    fill="#5F6368"/>
+                </svg>
+
+                <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12L10 18L20 6"
+                    stroke="#34A853"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <span class="copy-label">Copy translation</span>
+        </div>
+    </div>
+
+    <article class="description-container">
+        <section>
+            <h3>TRIGGERS</h3>
+                <ul>
+                    <li>Hover ON</li>
+                    <li>Hover OFF</li>
+                    <li>Click</li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>RULES</h3>
+              <h4>Hover ON</h4>
+                <ul>
+                  <li>Cursor changes to finger</li>
+                  <li>The button background changes from transparent to light gray</li>
+                  <li>The copy icon slightly scales up</li>
+                  <li>Label "Copy translation" fades in and moves slightly upward</li>
+                </ul>
+              <h4>Hover OFF</h4>
+                <ul>
+                  <li>Cursor changes back to default</li>
+                  <li>Button background returns to transparent</li>
+                  <li>Copy icon returns to its original size</li>
+                  <li>Label "Copy translation" fades out and moves slightly downward</li>
+                </ul>
+              <h4>Click</h4>
+                <ul>
+                  <li>When pressed, the button becomes smaller and the background turns darker</li>
+                  <li>The button then returns to its original size with a light green background and green border</li>
+                  <li>Copy icon disappears and an animated check icon appears</li>
+                  <li>Label changes from "Copy translation" to "Translation copied" and turns green</li>
+                  <li>Translation text is copied to the clipboard</li>
+                  <li>After a short delay, the button returns to its default appearance</li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>FEEDBACK</h3>
+              <h4>Hover ON</h4>
+                <ul>
+                  <li>Cursor changes to finger</li>
+                  <li>The button background changes from transparent to light gray</li>
+                  <li>The copy icon slightly scales up</li>
+                  <li>Label "Copy translation" fades in and moves slightly upward</li>
+                </ul>
+              <h4>Hover OFF</h4>
+                <ul>
+                  <li>Cursor changes back to default</li>
+                  <li>Button background returns to transparent</li>
+                  <li>Copy icon returns to its original size</li>
+                  <li>Label "Copy translation" fades out and moves slightly downward</li>
+                </ul>
+              <h4>Click</h4>
+                <ul>
+                 <li>When pressed, the button becomes smaller and the background turns darker</li>
+                  <li>The button then returns to its original size with a light green background and green border</li>
+                  <li>Copy icon disappears and an animated check icon appears</li>
+                  <li>Label changes from "Copy translation" to "Translation copied" and turns green</li>
+                  <li>After a short delay, the button returns to its default appearance</li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>LOOPS & MODES</h3>
+                <ul>
+                    <li>None</li>
+                </ul>
+        </section>
+    </article>
+<script src="alpha/build/alphabuild.js"></script>
+</body>
+</html>
