@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Build</title>
+    <link rel="stylesheet" href="betabuild.css">
+</head>
+<body>
+    <div class="translation-area">
+        <div class="translation-text">
+            This is the translated text.
+        </div>
+
+        <button class="save-btn" aria-label="Save translation">
+            <svg class="unfilled-star" width="24" height="23"
+                viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 5.33474L9.6075 4.87789L7.5 0L5.3925 4.88526L0 5.33474L4.095 8.82L2.865 14L7.5 11.2516L12.135 14L10.9125 8.82L15 5.33474ZM7.5 9.87368L4.68 11.5463L5.43 8.39263L2.94 6.27053L6.225 5.99053L7.5 3.02105L8.7825 5.99789L12.0675 6.27789L9.5775 8.4L10.3275 11.5537L7.5 9.87368Z"
+                    fill="#5F6368"/>
+            </svg>
+
+            <svg class="filled-star" width="24" height="23"
+                viewBox="0 0 15 14" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 5.33474L9.6075 4.87789L7.5 0L5.3925 4.88526L0 5.33474L4.095 8.82L2.865 14L7.5 11.2516L12.135 14L10.9125 8.82L15 5.33474Z"
+                    fill="#5F6368"/>
+            </svg>
+
+            <span class="tooltip">Save translation</span>
+        </button>
+
+        <button class="listen-btn" aria-label="Listen to translation">
+            <svg class="speaker-icon"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <path d="M16.5 12C16.5 10.23 15.48 8.70998 14 7.96998V16.02C15.48 15.29 16.5 13.77 16.5 12ZM14 3.22998V5.28998C16.89 6.14998 19 8.82998 19 12C19 15.17 16.89 17.85 14 18.71V20.77C18.01 19.86 21 16.28 21 12C21 7.71998 18.01 4.13998 14 3.22998Z"
+                    fill="#5F6368"/>
+
+                <mask id="stroke0_214_6" fill="white">
+                    <path d="M3 9V15H7L12 20V4L7 9H3Z"/>
+                </mask>
+
+                <path d="M3 9V15H7L12 20V4L7 9H3Z"
+                    stroke-width="4"
+                    stroke="#5F6368"
+                    mask="url(#stroke0_214_6)"/>
+            </svg>
+
+            <span class="audio-bars">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+
+            <span class="listen-label">Listen</span>
+        </button>
+    </div>
+    <script src="betabuild.js"></script>
+</body>
+</html>
