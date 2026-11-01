@@ -19,7 +19,7 @@ body{
     position: relative;
     width: 600px;
     min-height: 250px;
-    margin: 50px auto 0;
+    margin: 50px auto;
     padding: 30px;
     border: 1px solid #DADCE0;
     border-radius: 8px;
@@ -29,6 +29,7 @@ body{
     font-size: 21px;
     line-height: 1.5;
     color: #202124;
+    padding-right: 60px;
     padding-bottom: 60px;
 }
 
@@ -257,4 +258,67 @@ body{
 .listen-btn.playing .listen-label{
     opacity: 0;
     transform: translateX(-50%) translateY(5px);
+}
+
+.description-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1500px;
+    margin: 0 auto 50px;
+    padding: 0 30px;
+}
+
+.description-container > section{
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-height: fit-content;
+}
+
+.description-container h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.description-container h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.description-container ul{
+    padding-left: 20px;
+    margin: 10px 0 15px;
+}
+
+.description-container li{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 6px;
+}
+
+.object{
+    color: #1557b0;
+}
+
+@media (max-width: 1024px){
+
+    .description-container{
+        grid-template-columns: 1fr;
+        max-width: 800px;
+    }
+    .description-container > div{
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .translation-area{
+        width: auto;
+        margin: 50px 30px;
+    }
 }
