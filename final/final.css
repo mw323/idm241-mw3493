@@ -27,6 +27,28 @@ body{
     padding: 0 20px;
 }
 
+.google-translate-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background-color: #1a73e8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.google-translate-link img{
+    width: 24px;
+    height: 24px;
+}
+
+.google-translate-link:hover{
+    background-color: #1557b0;
+}
+
 .description-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
