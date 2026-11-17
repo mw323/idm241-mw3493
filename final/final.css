@@ -38,6 +38,7 @@ body{
     border-radius: 5px;
     transition: background-color 0.3s ease;
     outline: none;
+    margin: 0 20px;
 }
 
 .google-translate-link img{
@@ -95,18 +96,23 @@ body{
 }
 
 .video-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    justify-items: center;
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 30px;
 }
 
+.video-box{
+    display: flex;
+    gap: 50px;
+}
+
 video{
     width: 450px;
     height: 300px;
+}
+
+hr{
+    margin: 50px 0 20px;
 }
 
 .video-item{
@@ -124,6 +130,7 @@ video{
     display: block;
 }
 
+
 @media (max-width: 1200px){
     .video-container{
         max-width: 1000px;
@@ -140,6 +147,10 @@ video{
     }
     .video-container{
         max-width: 800px;
+    }
+
+    .video-box{
+        flex-direction: column;
     }
 }
 
